@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hola Mundo</h1>
+    <!-- creación de un Objeto con js -->
+    <script>
+      const Estudiante = {
+        nombre: {
+          i1: "Diana",
+          i2: "Carolina",
+        },
+        apellido: {
+          i1: "Pineda",
+          i2: "Ramirez",
+        },
+        edad: 27,
+      };
+      console.log(Estudiante);
+      console.log(Estudiante.nombre.i1);
+      console.log(
+        `El primer nombre de la estudiante es ${Estudiante.nombre.i1}`
+      );
+    </script>
+    <!-- templates y funciones con js -->
+    <script>
+      let comentario = (persona) => {
+        console.log(`Hola ${persona}`);
+      };
+      comentario("Diana");
+    </script>
+    <!-- recorrer una colección con js -->
+    <script>
+      const articulos = [
+        { producto: "chocolate", precio: 500, disponible: true },
+        { producto: "galleta", precio: 700, disponible: true },
+        { producto: "goma", precio: 300, disponible: false },
+        { producto: "lapiz", precio: 800, disponible: true },
+      ];
+
+      //forEach
+      articulos.forEach((item) => {
+        console.log(item);
+        console.log(item.producto);
+        console.log(item.precio);
+        console.log(item.disponible);
+      });
+
+      //map
+      articulos.map((item) => {
+        console.log(item);
+        console.log(item.producto);
+        console.log(item.precio);
+        console.log(item.disponible);
+      });
+      articulos.map((item) => {
+        console.log(item);
+      });
+    </script>
+    <!-- objetos y funciones con js -->
+    <script>
+      let calculo = (mts, precio) => {
+        return mts * precio;
+      };
+      let Inventario = {
+        c2312: {
+          nombre: "cable dulce",
+          precio: calculo(3, 1000),
+        },
+        c2313: {
+          nombre: "cable plano",
+          precio: calculo(6, 500),
+        },
+      };
+      console.log(Inventario);
+      console.log(Inventario.c2312);
+    </script>
+  </body>
+</html>
